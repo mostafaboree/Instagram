@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp">
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/story_photo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/inastagram" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/story_plus"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_baseline_add_circle_24"
+            android:layout_alignBottom="@+id/story_photo"
+            android:layout_alignRight="@+id/story_photo"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/story_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</LinearLayout>

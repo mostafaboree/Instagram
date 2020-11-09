@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_username_cp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:paddingStart="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_cp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/inastagram"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_usename_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/username"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_user_cp"
+        app:layout_constraintStart_toEndOf="@+id/iv_user_cp"
+        app:layout_constraintTop_toTopOf="@+id/iv_user_cp" />
+
+        <ImageView
+            android:id="@+id/iv_post_p"
+            android:layout_width="wrap_content"
+            android:layout_height="390dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fitsSystemWindows="true"
+            android:foregroundGravity="center"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/inastagram"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_user_cp" />
+
+
+        <ImageView
+            android:id="@+id/iv_like_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fave"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_post_p" />
+
+        <ImageView
+            android:id="@+id/iv_comment_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_comment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_like_p"
+            app:layout_constraintTop_toTopOf="@+id/iv_like_p"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_save_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_save"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_comment_post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_comment_post"
+        app:layout_constraintVertical_bias="0.059" />
+
+
+        <LinearLayout
+            android:id="@+id/liner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/iv_like_p"
+            app:layout_constraintTop_toBottomOf="@id/iv_like_p">
+
+
+            <TextView
+                android:id="@+id/tv_likes_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 likes"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/iv_like_p"
+                app:layout_constraintTop_toBottomOf="@+id/iv_comment_post"
+                app:layout_constraintVertical_bias="0.244" />
+
+            <TextView
+                android:id="@+id/tv_publisher_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/iv_like_p"
+                app:layout_constraintTop_toBottomOf="@id/tv_likes_p"
+                app:layout_constraintVertical_bias="0.196" />
+
+            <TextView
+                android:id="@+id/tv_des_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="description"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_publisher_p"
+                app:layout_constraintTop_toBottomOf="@+id/tv_publisher_p"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tv_viewAllcomen_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="view All 20 comment" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

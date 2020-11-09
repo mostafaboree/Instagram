@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1054629085943",
+    "firebase_url": "https://insagram-fa3b1.firebaseio.com",
+    "project_id": "insagram-fa3b1",
+    "storage_bucket": "insagram-fa3b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054629085943:android:a29b9faf965e5a507909f2",
+        "android_client_info": {
+          "package_name": "com.mostafabor3e.insta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054629085943-nekc11n928ikpfsej4rq95plfvt6c9h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF8kZDdfaN4912aYtm08wx-OShpJLeQmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054629085943-nekc11n928ikpfsej4rq95plfvt6c9h5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
